@@ -28,15 +28,19 @@
 	<!-- _---------------{  ^_^  }---------------_-->
 	<body>
 		<div class="my-website">
-            <h1>Bet Casn</h1>
-            <button onclick="input1()">Input 1st </button>
-            <button onclick="input2()">Input 2nd </button>
-            <button onclick="input3()">Input 3rd </button>
-            <p id="pera1"> </p>
-            <p id="pera2"> </p>
-            <p id="pera3"> </p>
-            <button id="result-btn" onclick="result()">Result</button>
-            <p id="result-pera"></p>
+            <h1 class="center heading">Bet Casn</h1>
+            <div class="btn-group">
+                <button onclick="input1()" class="common-btn">Input 1st </button>
+                <button onclick="input2()" class="common-btn">Input 2nd </button>
+                <button onclick="input3()" class="common-btn">Input 3rd </button>
+            </div>
+            <div class="my-pera">
+                <p id="pera1"> </p>
+                <p id="pera2"> </p>
+                <p id="pera3"> </p>
+            </div>
+            <button id="result-btn" onclick="result()" class="common-btn result-btn">Result</button>
+            <p id="result-pera" class="result-pera"></p>
 		</div>
         <script src="./index.js"></script>
 	</body>
