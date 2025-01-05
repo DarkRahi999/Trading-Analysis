@@ -5,12 +5,34 @@
 //R_------------{  Update      :   05/01/2025   }-------------//
 
 //G_------------{  Start Hare  }------------
+function input1(){
+    let Letter1 = prompt("Please enter 1st last issue ");
+}
+function input2(){
+    let Letter2 = prompt("Please enter 2nd last issue ");
+}
+function input3(){
+    let Letter3 = prompt("Please enter 3rd last issue ");
+}
 
-let Letter1 = prompt("Please enter 1st last issue ");
-let Letter2 = prompt("Please enter 2nd last issue ");
-let Letter3 = prompt("Please enter 3rd last issue ");
+// function output1(){
+//     let peraOutput1 = document.querySelector("#pera1");
+//     peraOutput1.innerHTML = Letter1;
+// }
+// function output2(){
+//     let peraOutput1 = document.querySelector("#pera2");
+//     peraOutput1.innerHTML = Letter2;
+// }
+// function output3(){
+//     let peraOutput1 = document.querySelector("#pera3");
+//     peraOutput1.innerHTML = Letter3;
+// }
 
-if(Letter1==='Rahi') {
+
+
+
+
+if(Letter1===' ' || Letter2===' ' || Letter3===' ' ) {
     console.log('Skip');
 }
 // R --- Letter1 = Big Single
