@@ -5,20 +5,29 @@
 //R_------------{  Update      :   05/01/2025   }-------------//
 
 //G_------------{  Start Hare  }------------
+
 function input1(){
     let Letter1 = prompt("Please enter 1st last issue ");
+    let peraOutput1 = document.querySelector("#pera1");
+        peraOutput1.innerHTML = ("1st issue is : " + Letter1);
 }
 function input2(){
     let Letter2 = prompt("Please enter 2nd last issue ");
+    let peraOutput2 = document.querySelector("#pera2");
+        peraOutput2.innerHTML = ("2nd issue is : " + Letter2);
 }
 function input3(){
     let Letter3 = prompt("Please enter 3rd last issue ");
+    let peraOutput3 = document.querySelector("#pera3");
+        peraOutput3.innerHTML = ("3rd issue is : " + Letter3);
 }
 
-// function output1(){
-//     let peraOutput1 = document.querySelector("#pera1");
-//     peraOutput1.innerHTML = Letter1;
-// }
+
+
+
+
+
+
 // function output2(){
 //     let peraOutput1 = document.querySelector("#pera2");
 //     peraOutput1.innerHTML = Letter2;
