@@ -61,6 +61,9 @@ function result(){
     else if(Letter1 === 'Small Single' && Letter2 === 'Small Double' && Letter3 === 'Small Single'){
         finalResult.innerHTML = ("Add = Big Single <br> Skip = None");
     }
+    else if(Letter1 === 'Small Single' && Letter2 === 'Small Double' && Letter3 === 'Small Double'){
+        finalResult.innerHTML = ("Add = Big Single <br> Skip = None");
+    }
     // G --------- Letter1 = Big Double    ---------
     else if(Letter1 === 'Big Double' && Letter2 === 'Small Double' && Letter3 === 'Small Double'){
         finalResult.innerHTML = ("Add = Big Single, Small Double, Big Double <br> Skip = Small Double");
