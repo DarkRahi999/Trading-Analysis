@@ -53,14 +53,20 @@ function result(){
     }
 
     // G --------- Letter1 = Small Single  ---------
+    else if(Letter1 === 'Small Single' && Letter2 === 'Big Single' && Letter3 === 'Big Single'){
+        finalResult.innerHTML = ("Add = Small Double' <br> Skip = None");
+    }
     else if(Letter1 === 'Small Single' && Letter2 === 'Big Single' && Letter3 === 'Big Double'){
         finalResult.innerHTML = ("Add = Small Single <br> Skip = None");
     }
     else if(Letter1 === 'Small Single' && Letter2 === 'Big Single' && Letter3 === 'Small Double'){
         finalResult.innerHTML = ("Add = Small Double <br> Skip = None");
     }
+    else if(Letter1 === 'Small Single' && Letter2 === 'Big Double' && Letter3 === 'Big Single'){
+        finalResult.innerHTML = ("Add = Big Double <br> Skip = None");
+    }
     else if(Letter1 === 'Small Single' && Letter2 === 'Big Double' && Letter3 === 'Small Single'){
-        finalResult.innerHTML = ("Add = Small Single <br> Skip = None");
+        finalResult.innerHTML = ("Add = Small Single, Small Double <br> Skip = None");
     }
     else if(Letter1 === 'Small Single' && Letter2 === 'Big Double' && Letter3 === 'Big Double'){
         finalResult.innerHTML = ("Add = Small Double, Big Single <br> Skip = None");
@@ -75,14 +81,23 @@ function result(){
         finalResult.innerHTML = ("Add = Small Double <br> Skip = None");
     }
     else if(Letter1 === 'Small Single' && Letter2 === 'Small Double' && Letter3 === 'Small Double'){
-        finalResult.innerHTML = ("Add = Big Single <br> Skip = None");
+        finalResult.innerHTML = ("Add = Big Single, Small Double <br> Skip = None");
     }
     // G --------- Letter1 = Big Double    ---------
     else if(Letter1 === 'Big Double' && Letter2 === 'Big Single' && Letter3 === 'Big Single'){
         finalResult.innerHTML = ("Add = Small Double <br> Skip = None");
     }
+    else if(Letter1 === 'Big Double' && Letter2 === 'Big Single' && Letter3 === 'Big Double'){
+        finalResult.innerHTML = ("Add = Small Single <br> Skip = None");
+    }
+    else if(Letter1 === 'Big Double' && Letter2 === 'Small Single' && Letter3 === 'Big Single'){
+        finalResult.innerHTML = ("Add = Small Single <br> Skip = None");
+    }
     else if(Letter1 === 'Big Double' && Letter2 === 'Small Single' && Letter3 === 'Small Single'){
         finalResult.innerHTML = ("Add = Small Single <br> Skip = None");
+    }
+    else if(Letter1 === 'Big Double' && Letter2 === 'Small Single' && Letter3 === 'Big Double'){
+        finalResult.innerHTML = ("Add = Small Double, Big Double <br> Skip = None");
     }
     else if(Letter1 === 'Big Double' && Letter2 === 'Small Double' && Letter3 === 'Big Single'){
         finalResult.innerHTML = ("Add = Big Double, Small Double <br> Skip = None");
@@ -115,18 +130,21 @@ function result(){
     else if(Letter1 === 'Small Double' && Letter2 === 'Small Single' && Letter3 === 'Big Double'){
         finalResult.innerHTML = ("Add = Small Double, Small Single <br> Skip = None");
     }
+    else if(Letter1 === 'Small Double' && Letter2 === 'Big Double' && Letter3 === 'Big Double'){
+        finalResult.innerHTML = ("Add = Small Double <br> Skip = None");
+    }
     else if(Letter1 === 'Small Double' && Letter2 === 'Small Single' && Letter3 === 'Small Double'){
         finalResult.innerHTML = ("Add = Small Double <br> Skip = None");
     }
     else if(Letter1 === 'Small Double' && Letter2 === 'Big Double' && Letter3 === 'Small Single'){
-        finalResult.innerHTML = ("Add = Small Single <br> Skip = None");
+        finalResult.innerHTML = ("Add = Small Single, Big Single <br> Skip = None");
     }
     else if(Letter1 === 'Small Double' && Letter2 === 'Big Double' && Letter3 === 'Small Double'){
         finalResult.innerHTML = ("Add = Big Double <br> Skip = None");
     }
     // G --------- Letter1 = Big Single, Letter2 = Big Single      ---------
     else if(Letter1 === 'Big Single' && Letter2 === 'Big Single' && Letter3 === 'Small Double'){
-        finalResult.innerHTML = ("Add = Big Double <br> Skip = None");
+        finalResult.innerHTML = ("Add = Big Double, Small Single <br> Skip = None");
     }
     else if(Letter1 === 'Big Single' && Letter2 === 'Big Single' && Letter3 === 'Small Single'){
         finalResult.innerHTML = ("Add = Small Double <br> Skip = None");
@@ -146,7 +164,10 @@ function result(){
     }
     // G --------- Letter1 = Big Double, Letter2 = Big Double      ---------
     else if(Letter1 === 'Big Double' && Letter2 === 'Big Double' && Letter3 === 'Small Double'){
-        finalResult.innerHTML = ("Add = Small Single, Big Double <br> Skip = None");
+        finalResult.innerHTML = ("Add = Small Single, Small Double, Big Double <br> Skip = None");
+    }
+    else if(Letter1 === 'Big Double' && Letter2 === 'Big Double' && Letter3 === 'Small Single'){
+        finalResult.innerHTML = ("Add = Small Double  <br> Skip = None");
     }
     else if(Letter1 === 'Big Double' && Letter2 === 'Big Double' && Letter3 === 'Big Double'){
         finalResult.innerHTML = ("Add = Big Double, Small Double, Small Single <br> Skip = Big Single");
@@ -156,7 +177,7 @@ function result(){
         finalResult.innerHTML = ("Add = Big Double, Small single <br> Skip = None");
     }
     else if(Letter1 === 'Small Double' && Letter2 === 'Small Double' && Letter3 === 'Small Single'){
-        finalResult.innerHTML = ("Add = Big Double, Big Single <br> Skip = None");
+        finalResult.innerHTML = ("Add = Big Double, Big Single, Small Single <br> Skip = Small Double");
     }
     // G --------- Letter1 || Letter2 || Letter are not add yet  ---------
     else{
